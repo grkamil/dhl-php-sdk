@@ -413,7 +413,6 @@ class BusinessShipment extends Version {
 			CURLOPT_USERPWD => $this->getCredentials()->getUser() . ':' . $this->getCredentials()->getPassword(),
 			CURLOPT_CUSTOMREQUEST => "GET",
 			CURLOPT_HTTPHEADER => [
-				"Accept-Language: de-DE",
 				"Dhl-Api-Key: ".$this->getCredentials()->getApiKey(),
 				"content-type: application/json",
 			],
@@ -475,7 +474,6 @@ class BusinessShipment extends Version {
 			CURLOPT_USERPWD => $this->getCredentials()->getUser() . ':' . $this->getCredentials()->getPassword(),
 			CURLOPT_CUSTOMREQUEST => "POST",
 			CURLOPT_HTTPHEADER => [
-				"Accept-Language: de-DE",
 				"Dhl-Api-Key: ".$this->getCredentials()->getApiKey(),
 				"content-type: application/json",
 			],
@@ -603,7 +601,6 @@ class BusinessShipment extends Version {
 			CURLOPT_HTTPHEADER => [
 				"Accept: application/json",
 				"Dhl-Api-Key: ".$this->getCredentials()->getApiKey(),
-				"Accept-Language: de-DE",
 			],
 		]);
 
@@ -671,7 +668,6 @@ class BusinessShipment extends Version {
 			CURLOPT_HTTPHEADER => [
 				"Accept: application/json",
 				"Dhl-Api-Key: ".$this->getCredentials()->getApiKey(),
-				"Accept-Language: de-DE",
 			],
 		]);
 
@@ -723,7 +719,6 @@ class BusinessShipment extends Version {
 			CURLOPT_CUSTOMREQUEST => "GET",
 			CURLOPT_HTTPHEADER => [
 				"Accept: application/pdf",
-				"Accept-Language: de-DE",
 			],
 		]);
 
@@ -808,7 +803,6 @@ class BusinessShipment extends Version {
 			CURLOPT_CUSTOMREQUEST => "POST",
 			CURLOPT_POSTFIELDS => json_encode($data),
 			CURLOPT_HTTPHEADER => [
-				"Accept-Language: de-DE",
 				"Dhl-Api-Key: ".$this->getCredentials()->getApiKey(),
 				"content-type: application/json",
 			],
