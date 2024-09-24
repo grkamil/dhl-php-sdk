@@ -40,7 +40,7 @@ abstract class Address {
 	 *
 	 * @var string $addressHouse - Street Number (may with extra stuff like a/b/c/d etc)
 	 */
-	private $addressHouse = '';
+	private $addressHouse = null;
 
 	/**
 	 * Contains other Info about the Address like if its hard to find or where it is exactly located
