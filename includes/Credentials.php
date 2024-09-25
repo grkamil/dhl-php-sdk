@@ -98,16 +98,7 @@ class Credentials {
 	 * 					Live (No-Test-Mode): false - default
 	 */
 	public function __construct($sandbox = false) {
-		if($sandbox) {
-			switch($sandbox) {
-				case true:
-					$this->setUser(self::DHL_BUSINESS_TEST_USER);
-				default:
-					$this->setUser(self::DHL_BUSINESS_TEST_USER);
-			}
-			$this->setPassword(self::DHL_BUSINESS_TEST_USER_PASSWORD);
-			$this->setEkp(self::DHL_BUSINESS_TEST_EKP);
-		}
+
 	}
 
 	/**
