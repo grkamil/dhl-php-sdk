@@ -116,7 +116,7 @@ class Credentials {
 	 * @param string $user - DHL-Intraship Username
 	 */
 	public function setUser($user) {
-		$this->user = mb_strtolower($user);
+		$this->user = $user;
 	}
 
 	/**
